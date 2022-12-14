@@ -76,7 +76,7 @@
 
     @include responsive(tablet-large) {
         @include flexCenter;
-        z-index: 19999999999999999999 !important;
+        z-index:999999999999 !important;
     }
 
 

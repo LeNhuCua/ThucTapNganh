@@ -1869,6 +1869,7 @@ body li {
 
 .loading {
   position: fixed;
+  z-index: 100000000000000020000000000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1963,7 +1964,7 @@ body li {
   #menu-btn, #menu-close-btn {
     display: flex;
     align-items: center;
-    z-index: 20000000000000000000 !important;
+    z-index: 999999999999 !important;
   }
 }
 
