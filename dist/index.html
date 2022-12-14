@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="./main.css?v=e8b14fc73919132d596f0fff809c1a1d">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?v=e8b14fc73919132d596f0fff809c1a1d">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?v=e8b14fc73919132d596f0fff809c1a1d">
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="form-container"> </div>
+    <div class="form-login">
+        <div class="form">
+            <div class="form__close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="form__body">
+                <h2>Welcome back!</h2>
+                <form action="">
+                    <div class="item">
+                        <label for="input-email">Email Address</label>
+                        <input id="input-email" type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="item">
+                        <label for="input-pass">Password</label>
+                        <input id="input-pass" type="password" placeholder="Password">
+                    </div>
+                    <div class="check">
+                        <div class="check__remember">
+                            <input type="checkbox"> Remember me
+                        </div>
+                        <div class="check__forgot"><a title="Forgot password">Forgot password</a></div>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <footer class="form__footer">
+                <p>Don&apos;t have an account?</p><a id="register" title="Register">Register</a>
+            </footer>
+        </div>
+    </div>
+    <div class="form-register">
+        <div class="form">
+            <div class="form__close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="form__body">
+                <h2>Create an Account</h2>
+                <form action="">
+                    <div class="item">
+                        <label for="r-input-name">Your name</label>
+                        <input id="r-input-name" type="text" placeholder="Name">
+                    </div>
+                    <div class="item">
+                        <label for="r-input-email">Email</label>
+                        <input id="r-input-email" type="text" placeholder="name@email.com">
+                    </div>
+                    <div class="item">
+                        <label for="r-input-passa">Password</label>
+                        <input id="r-input-passs" type="password" placeholder="Password">
+                    </div>
+                    <div class="item">
+                        <label for="r-c-input-passs">Confirm Password</label>
+                        <input id="r-c-input-passs" type="password" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <footer class="form__footer">
+                <p>Have an account?</p><a id="login" title="Login">Login</a>
+            </footer>
+        </div>
+    </div>
+    <div class="form-forgetpass">
+        <div class="form">
+            <div class="form__close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="form__body">
+                <h2>Reset Password</h2>
+                <form action="">
+                    <div class="item">
+                        <label for="f-input-email">Your Email</label>
+                        <input id="f-input-email" type="text" placeholder="name@email.com">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <footer class="form__footer"><a id="login" title="Login">Back to Login</a></footer>
+        </div>
+    </div>
+    <header class="header" id="header">
+        <div class="header__content container">
+            <div id="menu-btn"><span></span></div>
+            <div class="header__content--logo"><a href="#"><img src="../Images/logo.png" alt="logo"></a></div>
+            <div class="header__content--search">
+                <form action="">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Enter keywords...">
+                </form>
+            </div>
+            <div class="header__content--login"><i class="fa-solid fa-right-to-bracket"></i>
+                <p>Login</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div id="menu-close-btn"><span></span></div>
+            <nav class="sidebar__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-ranking-star"></i><span>Top IMDB</span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-film"></i><span>Movies</span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-tv"></i><span>TV Shows</span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-brands fa-android"></i><span>Android Ap</span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__item--noicon" href=""><span>Genre</span></a>
+                        <ul class="nav-list__grid">
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list__item"><a class="nav-list__item--noicon" href=""><span>Country</span></a>
+                        <ul class="nav-list__grid">
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="swiper mySwiper slider-container">
+                <div class="pre-btn">
+                    <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+                <div class="nxt-btn">
+                    <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="swiper-wrapper slider">
+                    <div class="swiper-slide card-slider">
+                        <div class="card-firm"><a class="card-firm__main" href="">
+                                <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                <div class="quality">HD</div>
+                                <div class="play"><i class="fa-solid fa-play"></i></div>
+                            </a><a class="card-firm__name" href="">Ten phim</a>
+                            <div class="card-firm__info"><span class="item star">9</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-slider">
+                        <div class="card-firm"><a class="card-firm__main" href="">
+                                <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                <div class="quality">HD</div>
+                                <div class="play"><i class="fa-solid fa-play"></i></div>
+                            </a><a class="card-firm__name" href="">Ten phim</a>
+                            <div class="card-firm__info"><span class="item star">2</span><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">117 phut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-slider">
+                        <div class="card-firm"><a class="card-firm__main" href="">
+                                <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                <div class="quality">HD</div>
+                                <div class="play"><i class="fa-solid fa-play"></i></div>
+                            </a><a class="card-firm__name" href="">Ten phim</a>
+                            <div class="card-firm__info"><span class="item star">1</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-slider">
+                        <div class="card-firm"><a class="card-firm__main" href="">
+                                <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                <div class="quality">HD</div>
+                                <div class="play"><i class="fa-solid fa-play"></i></div>
+                            </a><a class="card-firm__name" href="">Ten phim</a>
+                            <div class="card-firm__info"><span class="item star">3</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-slider">
+                        <div class="card-firm"><a class="card-firm__main" href="">
+                                <div class="poster"><img src="../Images/anh3.jpg" alt="" /></div>
+                                <div class="quality">HD</div>
+                                <div class="play"><i class="fa-solid fa-play"></i></div>
+                            </a><a class="card-firm__name" href="">Ten phim</a>
+                            <div class="card-firm__info"><span class="item star">5</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="social-network">
+                <nav class="social-network__list"><a class="item" href="" style="--i:#1DA1F2;"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a><a class="item" href="" style="--i:#3B5998;"><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a><a class="item" href="" style="--i:#4DC247;"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a><a class="item" href="" style="--i:#CB2027;"><i class="fa-brands fa-pinterest"></i><span>Pinterest</span></a><a class="item" href="" style="--i:#0088CC;"><i class="fa-brands fa-telegram"></i><span>Telegram</span></a><a class="item" href="" style="--i:#848484;"><i class="fa-solid fa-envelope"></i><span>Email</span></a><a class="item" href="" style="--i:#FF6550;"><i class="fa-solid fa-plus"></i><span>More</span></a></nav>
+            </section>
+            <section class="home-container">
+                <div class="home-container__heading">
+                    <h3>Latest Movies</h3><a href=""><span>View All</span><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="home-container__main">
+                    <div class="row gy-5">
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh1.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh3.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="film-item">
+                                <div class="card-firm"><a class="card-firm__main" href="">
+                                        <div class="poster"><img src="../Images/anh2.jpg" alt="" /></div>
+                                        <div class="quality">HD</div>
+                                        <div class="play"><i class="fa-solid fa-play"></i></div>
+                                    </a><a class="card-firm__name" href="">Ten phim</a>
+                                    <div class="card-firm__info"><span class="item star">100</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 phut</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="container">
+        <footer class="footer">
+            <div class="footer__logo"><a href=""><img src="../Images/logo.png" alt=""></a></div>
+            <ul class="footer__menu">
+                <li><a href="">Terms of service</a></li>
+                <li class="sub">-</li>
+                <li><a href="">Contact</a></li>
+                <li class="sub">-</li>
+                <li><a href="">Map</a></li>
+            </ul>
+            <p class="footer__copy">Active</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?v=e8b14fc73919132d596f0fff809c1a1d"></script>
+    <script src="../Js/main.js?v=e8b14fc73919132d596f0fff809c1a1d"></script>
+</body>

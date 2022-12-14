@@ -1,0 +1,37 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin icon($color) {
+    font-size: 2rem;
+    color: $color;
+
+}
+
+@mixin responsive($breakpoint)  {
+    @if $breakpoint == phone {
+        @media screen  and (max-width:600px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet-small {
+        @media screen  and (max-width:900px){
+            @content;
+        }
+    }
+    @if $breakpoint == tablet-large {
+        @media screen  and (max-width:1200px){
+            @content;
+        }
+    }
+}
+
+
+@mixin titleText($size) {
+    font-size: $size;
+    font-weight: 600;
+    line-height: 4rem;
+    text-align: left;
+    color: $orange-color;
+}
+

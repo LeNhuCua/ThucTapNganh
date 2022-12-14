@@ -1,0 +1,28 @@
+.social-network{
+    width: 100%;
+    &__list {
+        @include flexCenter;
+        justify-content: center;
+        gap: 0.6rem;
+        .item {
+            @include flexCenter;
+            justify-content: center;
+            gap: 0.6rem;
+            color: $white-color;
+            background-color: var(--i);
+            font-size: 1.2rem;
+            padding: 1rem 1.2rem;
+            line-height: 1rem;
+            transition: all 0.5s;
+            &:hover {
+                transform: translateY(-0.7rem);
+            }
+            span {
+                @include responsive(tablet-large) {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

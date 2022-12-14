@@ -1,0 +1,125 @@
+%pseudo-block {
+    content: '';
+    position: absolute;
+    top: 0.7rem;
+
+    width: 100%;
+    height: 100%;
+
+    background: $white-color;
+
+    transition: all 0.3s;
+    transform: rotate(0deg);
+
+}
+
+#menu-btn {
+    @include flexCenter;
+    position:relative !important;
+    z-index: 9999 !important;
+   
+    width: 4rem;
+    min-height: 4rem;
+
+    display: none;
+
+    margin-right: 1rem;
+    background: red;
+    padding: 0.4rem;
+
+    cursor: pointer;
+
+    span {
+        position: relative;
+        @include flexCenter;
+        
+        width: 100%;
+        height: 0.15rem;
+
+        background: $white-color;
+        transition: all 0.9s;
+
+        &::before {
+            @extend %pseudo-block;
+        }
+
+        &::after {
+            @extend %pseudo-block;
+            top: -0.7rem;
+        }
+
+    }
+
+    &:hover span::before {
+        top: 1rem;
+    }
+
+    &:hover span::after {
+        top: -1rem;
+    }
+
+    &.active span {
+        background: transparent;
+    }
+
+    &.active span::before {
+        transform: rotate(45deg);
+        top: 50%;
+        background: $white-color;
+    }
+
+    &.active span::after {
+        transform: rotate(-45deg);
+        top: -50%;
+        background: $white-color;
+    }
+
+    @include responsive(tablet-large) {
+        @include flexCenter;
+        z-index: 19999999999999999999 !important;
+    }
+
+
+}
+
+
+
+#menu-close-btn {
+    @extend #menu-btn;  
+
+    position: absolute !important;
+    top: 1rem;
+    left: 1rem;
+
+    span {
+        background: transparent;
+
+        &::before {
+           
+            transform: rotate(45deg);
+            top: 50%;
+
+        }
+
+        &::after {
+            
+            transform: rotate(-45deg);
+            top: -50%;
+        }
+
+    }
+
+
+    &:hover span::before {
+        top: 0rem;
+        transform: rotate(50deg);
+    }
+
+    &:hover span::after {
+        top: 0rem;
+        transform: rotate(-50deg);
+
+    }
+
+
+}

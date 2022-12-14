@@ -1,0 +1,19 @@
+mixin film(image,name,year,hour,star)
+        .card-firm
+            a.card-firm__main(href='')
+                .poster
+                    img(src=image alt='')
+                .quality HD
+                .play
+                    i.fa-solid.fa-play
+            a.card-firm__name(href='')=name
+            .card-firm__info
+                if star
+                    span.item.star= star
+                    span.item= year
+                    i.item.fa-solid.fa-circle
+                    span.item= hour
+                else
+                    span.item= year
+                    i.item.fa-solid.fa-circle
+                    span.item= hour

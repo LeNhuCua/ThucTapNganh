@@ -1,0 +1,25 @@
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        border-top: 0.4rem solid rgb(72, 196, 50);
+        border-right: 0.4rem solid rgb(72, 196, 50);
+      }
+      50% {
+        transform: rotate(180deg);
+        border-top: 0.4rem solid rgb(0, 38, 255);
+        border-right: 0.4rem solid rgb(0, 38, 255);
+        
+      }
+    100% {
+        transform: rotate(360deg);
+        border-top: 0.4rem solid rgb(255, 0, 255);
+        border-right:0.4rem solid rgb(255, 0, 255);
+      }
+}
+
+@keyframes fadeIn {
+  0%{
+     top:50%;
+     opacity: 0;
+  }
+}

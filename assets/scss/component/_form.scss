@@ -1,0 +1,29 @@
+.form-login {
+    position: fixed;
+    z-index: 1000;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 33.33%;
+
+    border: 2px solid red;
+    
+    transition: all 0.25s;
+
+    @include responsive(tablet-large) {
+        width: 50%;
+    }
+    @include responsive(phone) {
+        width: 92%;
+    }
+    &.show {
+        top: 50%;
+    }
+}
+.form-register {
+    @extend .form-login;
+}
+.form-forgetpass {
+    @extend .form-login;
+}

@@ -1,0 +1,76 @@
+extends ../layout/layout.pug
+block main
+    section.swiper.mySwiper.slider-container
+        .pre-btn
+            button.pre-btn
+                i.fa-solid.fa-chevron-left
+        .nxt-btn
+            button.nxt-btn
+                i.fa-solid.fa-chevron-right
+        .swiper-wrapper.slider
+           .swiper-slide.card-slider
+               +film("../Images/anh1.jpg","Ten phim","2021","120 phut","9")   
+           .swiper-slide.card-slider
+               +film("../Images/anh1.jpg","Ten phim","2022","117 phut","2")
+           .swiper-slide.card-slider
+               +film("../Images/anh1.jpg","Ten phim","2021","120 phut","1") 
+           .swiper-slide.card-slider
+               +film("../Images/anh1.jpg","Ten phim","2021","120 phut","3")
+           .swiper-slide.card-slider
+               +film("../Images/anh3.jpg","Ten phim","2021","120 phut","5")    
+    section.social-network
+        nav.social-network__list
+            a.item(href='' style='--i:#1DA1F2;')
+                i.fa-brands.fa-twitter
+                span Twitter
+            a.item(href='' style='--i:#3B5998;')
+                i.fa-brands.fa-square-facebook
+                span Facebook
+            a.item(href='' style='--i:#4DC247;')
+                i.fa-brands.fa-whatsapp
+                span WhatsApp
+            a.item(href='' style='--i:#CB2027;')
+                i.fa-brands.fa-pinterest
+                span Pinterest
+            a.item(href='' style='--i:#0088CC;')
+                i.fa-brands.fa-telegram
+                span Telegram
+            a.item(href='' style='--i:#848484;')
+                i.fa-solid.fa-envelope
+                span Email
+            a.item(href='' style='--i:#FF6550;')
+                i.fa-solid.fa-plus
+                span More
+
+    section.home-container
+        .home-container__heading
+            h3 Latest Movies
+            a(href='')
+                span View All
+                i.fa-solid.fa-chevron-right
+        .home-container__main
+            .row.gy-5
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh1.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                         +film("../Images/anh1.jpg","Ten phim","2021","120 phut")                    
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh1.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh1.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh1.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh1.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh3.jpg","Ten phim","2021","120 phut") 
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+                    .film-item
+                        +film("../Images/anh2.jpg","Ten phim","2021","120 phut","100") 

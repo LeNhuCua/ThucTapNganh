@@ -1,0 +1,76 @@
+.loading
+.form-container  
+.form-login
+  .form
+    .form__close
+      i.fa-solid.fa-xmark
+    .form__body
+      h2 Welcome back!
+      form(action='')
+        .item
+          label(for='input-email') Email Address
+          input#input-email(type='email' placeholder='name@email.com')
+        .item
+          label(for='input-pass') Password
+          input#input-pass(type='password' placeholder='Password')
+        .check
+          .check__remember
+            input(type='checkbox')
+            |  Remember me
+          .check__forgot
+            a(title='Forgot password') Forgot password
+        button(type='submit') Login
+    footer.form__footer
+      p Don&apos;t have an account?
+      a#register(title='Register') Register
+.form-register
+  .form
+    .form__close
+      i.fa-solid.fa-xmark
+    .form__body
+      h2 Create an Account
+      form(action='')
+        .item
+          label(for='r-input-name') Your name
+          input#r-input-name(type='text' placeholder='Name')
+        .item
+          label(for='r-input-email') Email
+          input#r-input-email(type='text' placeholder='name@email.com')
+        .item
+          label(for='r-input-passa') Password
+          input#r-input-passs(type='password' placeholder='Password')
+        .item
+          label(for='r-c-input-passs') Confirm Password
+          input#r-c-input-passs(type='password' placeholder='Confirm Password')
+        button(type='submit') Login
+    footer.form__footer
+      p Have an account?
+      a#login(title='Login') Login
+.form-forgetpass
+  .form
+    .form__close
+      i.fa-solid.fa-xmark
+    .form__body
+      h2 Reset Password
+      form(action='')
+        .item
+          label(for='f-input-email') Your Email
+          input#f-input-email(type='text' placeholder='name@email.com')
+        button(type='submit') Submit
+    footer.form__footer
+      a#login(title='Login') Back to Login
+header#header.header
+  .header__content.container
+    #menu-btn
+      span
+    .header__content--logo
+      a(href='#')
+        img(src='../Images/logo.png' alt='logo')
+    .header__content--search
+      form(action='')
+        button(type='submit')
+          i.fa-solid.fa-magnifying-glass
+        input(type='text' placeholder='Enter keywords...')
+    .header__content--login
+      i.fa-solid.fa-right-to-bracket
+      p Login

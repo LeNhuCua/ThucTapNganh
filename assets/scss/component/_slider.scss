@@ -1,0 +1,39 @@
+.slider-container {
+    position: relative;
+    padding: 1rem 0rem;
+
+    button {
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        transform: translateY(-100%);
+        width: 4rem;
+        height: 4rem;
+        border: none;
+
+        cursor: pointer;
+
+        i {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background: $orange-color;
+        }
+
+        &.pre-btn {
+            left: 0;
+        }
+
+        &.nxt-btn {
+            right: 0;
+        }
+    }
+
+}
+
+
+.swiper {
+    width: 100%;
+    padding: 1rem 0px !important;
+}

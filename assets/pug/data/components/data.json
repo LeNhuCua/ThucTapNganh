@@ -1,0 +1,768 @@
+{
+    "general": {
+        "title_website": "The Arena",
+        "description_website": "The Arena",
+        "keywords_website": "The Arena",
+        "url_favicon": "images/brand/favicon.ico",
+        "url_website": "https://thearena.vn/",
+        "created_website": "2022-10-24",
+        "author": "The Arena",
+        "hreflang_website": "vi, en",
+        "logo": "images/brand/logo-1.png"
+    },
+    "language_menu": [
+        {
+            "img": "images/language/vi.png",
+            "title": "Việt Nam"
+        },
+        {
+            "img": "images/language/en.png",
+            "title": "English"
+        }
+    ],
+    "menu_main": [
+        {
+            "title": "Trang chủ",
+            "link": "index.html"
+        },
+        {
+            "title": "Giới thiệu",
+            "link": "gioi-thieu.html"
+        },
+        {
+            "title": "Sự kiện",
+            "link": "ds-su-kien.html"
+        },
+        {
+            "title": "Blog",
+            "link": "ds-tin-tuc.html"
+        },
+        {
+            "title": "Thư viện",
+            "link": "thu-vien.html"
+        },
+        {
+            "title": "Booking",
+            "link": "ds-phong.html"
+        },
+        {
+            "title": "Liên hệ",
+            "link": "lien-he.html"
+        }
+    ],
+    "footer": {
+        "menu_contact": [
+            {
+                "title": "Lô TT13, D14d, Lô TT9b, Đại Lộ Nguyễn Tất Thành, Khu 4 Khu Du Lịch Quốc Gia Bắc Bán Đảo Cam Ranh, Phường Cam Nghĩa, TP Cam Ranh, tỉnh Khánh Hòa",
+                "link": "https://www.google.com/maps?ll=12.025993,109.214491&z=17&t=m&hl=vi&gl=US&mapclient=embed&cid=11631868050818907920",
+                "icon": "address"
+            },
+            {
+                "title": "02583968888",
+                "link": "tel:02583968888",
+                "icon": "phone"
+            },
+            {
+                "title": "thearena.vn",
+                "link": "https://thearena.vn/",
+                "icon": "web"
+            },
+            {
+                "title": "rsvn.ams@arenams.vn",
+                "link": "mailto:rsvn.ams@arenams.vn",
+                "icon": "mail"
+            }
+        ],
+        "menu_service": [
+            {
+                "title": "Booking",
+                "link": "ds-phong.html"
+            },
+            {
+                "title": "Dịch vụ kỳ nghỉ",
+                "link": "javascript:void(0);"
+            },
+            {
+                "title": "Sự kiện",
+                "link": "ds-su-kien.html"
+            },
+            {
+                "title": "Thư viện",
+                "link": "thu-vien.html"
+            }
+        ],
+        "menu_media": [
+            {
+                "title": "Giới thiệu",
+                "link": "gioi-thieu.html"
+            },
+            {
+                "title": "Liên hệ",
+                "link": "lien-he.html"
+            },
+            {
+                "title": "Trung tâm hỗ trợ",
+                "link": "javascript:void(0);"
+            },
+            {
+                "title": "Blog",
+                "link": "ds-tin-tuc.html"
+            }
+        ],
+        "social": [
+            {
+                "icon": {
+                    "view": "0 0 320 512",
+                    "data": "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                },
+                "link": "javascript:void(0);",
+                "title": "Facebook"
+            },
+            {
+                "icon": {
+                    "view": "0 0 576 512",
+                    "data": "M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                },
+                "link": "javascript:void(0);",
+                "title": "Youtube"
+            },
+            {
+                "icon": {
+                    "view": "0 0 448 512",
+                    "data": "M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                },
+                "link": "javascript:void(0);",
+                "title": "Tik tok"
+            },
+            {
+                "icon": {
+                    "view": "0 0 448 512",
+                    "data": "M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                },
+                "link": "javascript:void(0);",
+                "title": "Instagram"
+            }
+        ]
+    },
+    "page_home": {
+        "title_page": "Trang Chủ",
+        "description_page": "Trang Chủ",
+        "keywords_page": "Trang Chủ",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "home"
+        ],
+        "link_js_page": [
+            "lib",
+            "home"
+        ],
+        "slide_main": [
+            "images/slide-main/1.jpg",
+            "images/slide-main/2.jpg"
+        ]
+    },
+    "page_event_list": {
+        "title_page": "Danh Sách Sự kiện",
+        "title_page_text": "<p>Danh Sách</p><p>Sự kiện</p>",
+        "description_page": "Danh Sách Sự kiên",
+        "keywords_page": "Danh Sách Sự kiên",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "event-list"
+        ],
+        "link_js_page": [
+            "lib",
+            "event-list"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/9.jpg",
+            "menu": []
+        }
+    },
+    "page_event_detail": {
+        "title_page": "Chi Tiết Sự Kiện",
+        "title_page_text": "<p>Chi Tiết</p><p>Sự kiện</p>",
+        "description_page": "Chi Tiết Sự Kiện",
+        "keywords_page": "Chi Tiết Sự Kiện",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "event-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "event-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/10.jpg",
+            "menu": []
+        }
+    },
+    "page_event_book": {
+        "title_page": "Đặt Vé",
+        "title_page_text": "Đặt Vé",
+        "description_page": "Đặt Vé",
+        "keywords_page": "Đặt Vé",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "event-book"
+        ],
+        "link_js_page": [
+            "lib",
+            "event-book"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/11.jpg",
+            "menu": []
+        }
+    },
+    "page_event_pay": {
+        "title_page": "Thanh Toán",
+        "title_page_text": "Thanh Toán",
+        "description_page": "Thanh Toán",
+        "keywords_page": "Thanh Toán",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "event-pay"
+        ],
+        "link_js_page": [
+            "lib",
+            "event-pay"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/12.jpg",
+            "menu": []
+        }
+    },
+    "page_room_list": {
+        "title_page": "Danh Sách Phòng",
+        "title_page_text": "<p>NHỮNG</p><p>CĂN HỘ</p><p>TỐT NHẤT</p>",
+        "description_page": "Danh Sách Phòng",
+        "keywords_page": "Danh Sách Phòng",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "room-list"
+        ],
+        "link_js_page": [
+            "lib",
+            "room-list"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/13.jpg",
+            "menu": []
+        }
+    },
+    "page_room_detail": {
+        "title_page": "Chi Tiết Phòng",
+        "title_page_text": "<p>Chi Tiết</p><p>Phòng</p>",
+        "description_page": "Chi Tiết Phòng",
+        "keywords_page": "Chi Tiết Phòng",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "room-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "room-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/14.jpg",
+            "menu": []
+        }
+    },
+    "page_about": {
+        "title_page": "Giới Thiệu",
+        "title_page_text": "GIỚI THIỆU",
+        "description_page": "Giới Thiệu",
+        "keywords_page": "Giới Thiệu",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "about"
+        ],
+        "link_js_page": [
+            "lib",
+            "about"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/15.jpg",
+            "menu": []
+        }
+    },
+    "page_contact": {
+        "title_page": "Liên hệ",
+        "title_page_text": "Liên hệ",
+        "description_page": "Liên hệ",
+        "keywords_page": "Liên hệ",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "event-pay",
+            "contact"
+        ],
+        "link_js_page": [
+            "lib",
+            "event-pay"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/6.png",
+            "menu": []
+        }
+    },
+    "page_library": {
+        "title_page": "Thư viện",
+        "title_page_text": "Thư viện",
+        "description_page": "Thư viện",
+        "keywords_page": "Thư viện",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "libraryImage"
+        ],
+        "link_js_page": [
+            "lib",
+            "images-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/14.jpg",
+            "menu": []
+        },
+        "tabList": [
+            {
+                "link": "javascript:void(0);",
+                "title": "Tất cả"
+            },
+            {
+                "link": "javascript:void(0);",
+                "title": "Phòng nghỉ"
+            },
+            {
+                "link": "javascript:void(0);",
+                "title": "Toàn cảnh"
+            },
+            {
+                "link": "javascript:void(0);",
+                "title": "Tiện ích"
+            },
+            {
+                "link": "javascript:void(0);",
+                "title": "Sự kiện"
+            }
+        ],
+        "galleryList": [
+            {
+                "image": "images/gallery/1.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/2.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/3.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/4.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/5.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/6.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/7.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/8.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/9.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/10.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/11.png",
+                "title": "Ảnh The Arena"
+            },
+            {
+                "image": "images/gallery/12.png",
+                "title": "Ảnh The Arena"
+            }
+        ]
+    },
+    "page_newsList": {
+        "title_page": "Tin tức",
+        "title_page_text": "Tin tức",
+        "description_page": "Tin tức",
+        "keywords_page": "Tin tức",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "news-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/13.png",
+            "menu": []
+        },
+        "newsList": [
+            {
+                "image": "images/news-list/1.jpg",
+                "title": "Bức tượng tình nhân nổi tiếng thế giới xuất hiện tại Việt Nam",
+                "desc": "Bức tượng tình nhân Ali và Nino - một trong 10 tác phẩm điêu khắc lãng mạn nhất thế giới vừa được vận chuyển đến Việt Nam và hoàn tất việc lắp đặt bên bờ biển Bãi Dài, Cam Ranh, Khánh Hòa.",
+                "date": "June 16, 2021",
+                "views": "120",
+                "link": "chi-tiet-tin-tuc.html"
+            },
+            {
+                "image": "images/news-list/2.jpg",
+                "title": "Dự án có bể bơi dài nửa cây số bên bờ biển Bãi Dài, Cam Ranh",
+                "desc": "Cảm giác vừa được thư giãn ở 3 tầng nước, vừa ngắm biển Bãi Dài xanh như ngọc cùng triền cát trắng mịn thoai thoải chắc chắn sẽ là điều ấn tượng khó quên bậc nhất khi du khách đến với The Arena Cam Ranh.",
+                "date": "June 16, 2021",
+                "views": "120",
+                "link": "chi-tiet-tin-tuc.html"
+            },
+            {
+                "image": "images/news-list/3.jpg",
+                "title": "Cận cảnh lễ ra mắt ấn tượng của dự án nghỉ dưỡng - giải trí The Arena",
+                "desc": "Sự kiện ra mắt The Arena diễn ra cuối tuần trước thu hút hàng nghìn khách hàng tham dự. Đây là sự kiện đánh dấu bước khởi đầu của The Arena trên thị trường bất động sản nghỉ dưỡng.",
+                "date": "June 16, 2021",
+                "views": "120",
+                "link": "chi-tiet-tin-tuc.html"
+            },
+            {
+                "image": "images/news-list/4.jpg",
+                "title": "Khám phá bể bơi 3 tầng độc đáo tại Cam Ranh",
+                "desc": "Bức tượng tình nhân Ali và Nino - một trong 10 tác phẩm điêu khắc lãng mạn nhất thế giới vừa được vận chuyển đến Việt Nam và hoàn tất việc lắp đặt bên bờ biển Bãi Dài, Cam Ranh, Khánh Hòa.",
+                "date": "June 16, 2021",
+                "views": "120",
+                "link": "chi-tiet-tin-tuc.html"
+            },
+            {
+                "image": "images/news-list/5.jpg",
+                "title": "Bức tượng tình nhân nổi tiếng thế giới xuất hiện tại Việt Nam",
+                "desc": "Cảm giác vừa được thư giãn ở 3 tầng nước, vừa ngắm biển Bãi Dài xanh như ngọc cùng triền cát trắng mịn thoai thoải chắc chắn sẽ là điều ấn tượng khó quên bậc nhất khi du khách đến với The Arena Cam Ranh.",
+                "date": "June 16, 2021",
+                "views": "120",
+                "link": "chi-tiet-tin-tuc.html"
+            }
+        ],
+        "newsCategory": [
+            {
+                "name": "Du lịch",
+                "link": "javascript:void(0);"
+            },
+            {
+                "name": "Tourist Guide",
+                "link": "javascript:void(0);"
+            },
+            {
+                "name": "City Sights",
+                "link": "javascript:void(0);"
+            },
+            {
+                "name": "Communication",
+                "link": "javascript:void(0);"
+            }
+        ]
+    },
+    "page_newsDetail": {
+        "title_page": "Tin tức",
+        "title_page_text": "Tin tức",
+        "description_page": "Tin tức",
+        "keywords_page": "Tin tức",
+        "url_image_page": "https://demo.sweetsoft.vn/the-arena/share.jpg",
+        "link_css_page": [
+            "fonts",
+            "lib",
+            "home",
+            "news-detail"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/16.png",
+            "menu": []
+        }
+    },
+    "room_testimonial": [
+        {
+            "img": "images/testimonial/1.jpg",
+            "title": "Ella Sanchez",
+            "text": "The room was wonderful and clean!"
+        },
+        {
+            "img": "images/testimonial/2.jpg",
+            "title": "Peter",
+            "text": "So nice!"
+        },
+        {
+            "img": "images/testimonial/3.jpg",
+            "title": "Uyên Nguyễn",
+            "text": "View đẹp, đồ ăn rất ngon"
+        },
+        {
+            "img": "images/testimonial/4.jpg",
+            "title": "Thành Phan",
+            "text": "Nhiều trải nghiệm mới lạ, lần sau có dịp sẽ quay trở lại"
+        },
+        {
+            "img": "images/testimonial/2.jpg",
+            "title": "Peter",
+            "text": "So nice!"
+        }
+    ],
+    "rooms": [
+        {
+            "img": "images/rooms/1.jpg",
+            "title": "Phòng Deluxe hướng biển",
+            "link": "phong.html"
+        },
+        {
+            "img": "images/rooms/2.jpg",
+            "title": "Phòng Presidental hướng biển",
+            "link": "phong.html"
+        },
+        {
+            "img": "images/rooms/3.jpg",
+            "title": "Phòng Executive hướng biển",
+            "link": "phong.html"
+        },
+        {
+            "img": "images/rooms/2.jpg",
+            "title": "Phòng Presidental hướng biển",
+            "link": "phong.html"
+        },
+        {
+            "img": "images/rooms/3.jpg",
+            "title": "Phòng Executive hướng biển",
+            "link": "phong.html"
+        },
+        {
+            "img": "images/rooms/2.jpg",
+            "title": "Phòng Presidental hướng biển",
+            "link": "phong.html"
+        }
+    ],
+    "room_regulations": [
+        {
+            "img": "images/icons/check.png",
+            "title": "Thời gian nhận phòng: sau 14h00"
+        },
+        {
+            "img": "images/icons/check.png",
+            "title": "Hút thuốc trong khu vực quy định"
+        },
+        {
+            "img": "images/icons/check.png",
+            "title": "Thời gian trả phòng: trước 12h00"
+        },
+        {
+            "img": "images/icons/check.png",
+            "title": "Phí bữa sáng (áp dụng khi không bao gồm trong giá phòng): 100.000 VND"
+        }
+    ],
+    "room_info": [
+        {
+            "img": "images/icons/user-2.png",
+            "title": "2 Người"
+        },
+        {
+            "img": "images/icons/bed-2.png",
+            "title": "1 Giường lớn"
+        },
+        {
+            "img": "images/icons/arrow-2.png",
+            "title": "50 m2"
+        }
+    ],
+    "room_gallery": [
+        {
+            "img": "images/rooms/4.jpg"
+        },
+        {
+            "img": "images/rooms/5.jpg"
+        },
+        {
+            "img": "images/rooms/6.jpg"
+        },
+        {
+            "img": "images/rooms/7.jpg"
+        }
+    ],
+    "room_utilities": [
+        {
+            "img": "images/icons/home.png",
+            "title": "Căn hộ"
+        },
+        {
+            "img": "images/icons/gym.png",
+            "title": "Phòng Gym"
+        },
+        {
+            "img": "images/icons/parking.png",
+            "title": "Bãi đỗ xe"
+        },
+        {
+            "img": "images/icons/air.png",
+            "title": "Điều hoà"
+        },
+        {
+            "img": "images/icons/bathtub.png",
+            "title": "Bồn tắm"
+        },
+        {
+            "img": "images/icons/wardrobe.png",
+            "title": "Tủ quần áo"
+        },
+        {
+            "img": "images/icons/laundry.png",
+            "title": "Giặt ủi"
+        },
+        {
+            "img": "images/icons/water-boiler.png",
+            "title": "Bình đun nước"
+        },
+        {
+            "img": "images/icons/wardrobe.png",
+            "title": "Tủ khoá"
+        }
+    ],
+    "event": [
+        {
+            "img": "images/event/6.jpg",
+            "title": "Bóng chuyền bãi biển",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/7.jpg",
+            "title": "Coral Beach Music Show",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/8.jpg",
+            "title": "Sống Plus",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/9.jpg",
+            "title": "Sunset Show",
+            "link": "su-kien.html"
+        }
+    ],
+    "event_list": [
+        {
+            "img": "images/event/6.jpg",
+            "title": "Bóng chuyền bãi biển",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/7.jpg",
+            "title": "Coral Beach Music Show",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/8.jpg",
+            "title": "Sống Plus",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/9.jpg",
+            "title": "Sunset Show",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/6.jpg",
+            "title": "Sống Plus",
+            "link": "su-kien.html"
+        },
+        {
+            "img": "images/event/8.jpg",
+            "title": "Sunset Show",
+            "link": "su-kien.html"
+        }
+    ],
+    "news": [
+        {
+            "img": "images/news/1.jpg",
+            "title": "Dự án có bể bơi dài nửa cây số bên bờ biển Bãi Dài, Cam Ranh",
+            "link": "javascript:void(0);",
+            "text": "Cảm giác vừa được thư giãn ở 3 tầng nước, vừa ngắm biển Bãi Dài xanh như ngọc cùng triền cát trắng mịn thoai thoải chắc chắn sẽ là điều ấn tượng khó quên bậc nhất khi  đến với The Arena Cam Ranh"
+        },
+        {
+            "img": "images/news/2.jpg",
+            "title": "Cận cảnh lễ ra mắt  dự án nghỉ dưỡng - giải trí The Arena",
+            "link": "javascript:void(0);",
+            "text": "Sự kiện ra mắt The Arena diễn ra cuối tuần trước thu hút hàng nghìn khách hàng tham dự. Đây là sự kiện đánh dấu bước khởi đầu của The Arena trên thị trường bất động sản nghỉ dưỡng"
+        },
+        {
+            "img": "images/news/3.jpg",
+            "title": "Khám phá bể bơi 3 tầng độc đáo tại Cam Ranh, Khánh Hoà",
+            "link": "javascript:void(0);",
+            "text": "Từ bể bơi 500m được thiết kế giật cấp 3 tầng chạy dọc bờ biển Cam Ranh, du khách không chỉ được tận hưởng những giây phút thư giãn khi ngâm mình trong dòng nước khoáng nóng..."
+        },
+        {
+            "img": "images/news/2.jpg",
+            "title": "Cận cảnh lễ ra mắt  dự án nghỉ dưỡng - giải trí The Arena",
+            "link": "javascript:void(0);",
+            "text": "Sự kiện ra mắt The Arena diễn ra cuối tuần trước thu hút hàng nghìn khách hàng tham dự. Đây là sự kiện đánh dấu bước khởi đầu của The Arena trên thị trường bất động sản nghỉ dưỡng"
+        }
+    ],
+    "about_architecture": [
+        {
+            "img": "images/about/3.jpg"
+        },
+        {
+            "img": "images/about/7.jpg"
+        }
+    ],
+    "about_feeling": [
+        {
+            "img": "images/about/4.jpg"
+        },
+        {
+            "img": "images/about/5.jpg"
+        }
+    ],
+    "about_summer": [
+        {
+            "img": "images/about/7.jpg"
+        },
+        {
+            "img": "images/about/3.jpg"
+        },
+        {
+            "img": "images/about/17.jpg"
+        }
+    ]
+}
