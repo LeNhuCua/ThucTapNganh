@@ -1,0 +1,103 @@
+.main__video {
+    color: $white-color;
+    background: $black2-color;
+    .video-left {
+        width: 100%;
+        video {
+            width: 100%;
+        }
+        &__favourite {
+            font-size: 1.6rem;
+            padding: 2rem;
+            background: $black-color;
+            a {
+                @include flexCenter(row);
+                gap: 1.5rem;
+                justify-content: flex-start;
+                color: $white-color;
+            }
+            span {
+                line-height: 2.4rem;
+            }
+        }
+    }
+    .video-right {
+            @include flexCenter(column);
+            justify-content: flex-start;
+            gap: 2rem;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            padding: 2rem 0;
+            h2 {
+                padding-left: 1rem;
+                @include responsive(tablet-large) {
+                    display: none;
+                   
+                }
+            }
+            &__title {
+                display: block;
+               
+                width: 100%;
+                p {
+                   
+                    padding-left: 1rem;
+                    font-size: 1.3rem;
+                    @include responsive(tablet-large) {
+                          text-align: center;
+                       
+                    }
+                }
+            }
+
+            ul {
+                @include flexCenter(column); 
+                gap:  2rem;
+                width: 100%;
+                @include responsive(tablet-large) {
+                    @include flexCenter(row);
+                    
+                }
+                li {
+                   
+                    width: 100%;
+                    @include responsive(tablet-large) {
+                        width: auto;
+                        background-color: $grey-color;
+                        border-radius: 0.4rem;
+                        opacity: 0.8;
+                        transition: all 0.3s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    a {
+                       
+                        padding: 1rem 1rem;
+                        @include responsive(tablet-large) {
+                            padding: 1rem 2rem;
+                            
+                        }
+                        width: 100%;
+                        color: $white-color;
+                        @include flexCenter(row); 
+                        justify-content: flex-start;
+                        gap: 2rem;
+                        h3 {
+                            font-size: 1.4rem;
+                        }
+                        span {
+                            display: inline-block;
+                            margin-top: 0/4rem;
+                            font-size: 1.3rem;
+                        }
+                    
+                    }
+                    &:hover {
+                        background: $grey-color;
+                    }
+                }
+            }
+    }
+}

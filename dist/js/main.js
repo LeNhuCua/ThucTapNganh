@@ -13,8 +13,18 @@ for (let i = 0; i < closeBtn.length; i++) {
     formRegister.classList.remove("show");
     formForgetpass.classList.remove("show");
     formContainer.classList.remove("show");
+    trailer_model.classList.remove("show");
   });
 }
+
+
+
+trailer = document.querySelector('.trailer');
+trailer_model = document.querySelector('.trailer-model');
+trailer.addEventListener("click", function () {
+  trailer_model.classList.toggle("show");
+  formContainer.classList.toggle("show");
+});
 
 formContainer.addEventListener("click", () => {
   formContainer.classList.remove("show");
@@ -23,6 +33,7 @@ formContainer.addEventListener("click", () => {
   formForgetpass.classList.remove("show");
   sideBar.classList.remove("show");
   menuBtn.classList.remove("active");
+  trailer_model.classList.remove("show");
 });
 
 //function-form
@@ -50,6 +61,8 @@ loginBtn.addEventListener("click", function () {
   formContainer.classList.toggle("show");
 });
 
+
+
 let menuBtn = document.querySelector("#menu-btn");
 let menuSpan = document.querySelector("#menu-btn span");
 let sideBar = document.querySelector(".sidebar");
@@ -66,9 +79,7 @@ menuCloseBtn.addEventListener("click", function () {
   formContainer.classList.remove("show");
 });
 
-
 var swiper = new Swiper(".mySwiper", {
-
   navigation: {
     prevEl: ".pre-btn",
     nextEl: ".nxt-btn",
@@ -90,9 +101,55 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4.5,
       spaceBetween: 40,
     },
-   1500: {
+    1500: {
       slidesPerView: 4.5,
-      spaceBetween:30,
+      spaceBetween: 30,
     },
   },
+});
+
+const filmList = document.querySelectorAll(".oneFilm");
+const typeBtns = document.querySelectorAll(".type");
+console.log(typeBtns);
+
+typeBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const type = btn.getAttribute("data1");
+
+    // remove and set active fpr button
+    // let j = 0;
+    // while (j < typeBtns.length) {
+    //   if(typeBtns[j].className == 'active') {
+    //     typeBtns[j].classList.remove("active");
+    //     j++;
+    //   }
+    // }
+
+    j = 0;
+    while(j < typeBtns.length) {
+      if(typeBtns[j].className == 'type active') {
+       typeBtns[j].className = 'type'
+      }
+      j++;
+    }
+    // remove and set active fpr button
+    // document
+    //   .querySelector(".type.active")
+    //   .classList.remove("active");
+    // e.target.classList.add("active");
+    // if(btn.className == 'type active') {
+    //   btn.className = "type";
+    //   console.log("ok");
+    // }
+  
+    btn.classList.add("active");
+
+    // e.target.classList.add('active')
+
+    filmList.forEach((item) => {
+      if (type == "all" || item.getAttribute("data1") == type)
+        item.classList.remove("hide");
+      else item.classList.add("hide");
+    });
+  });
 });

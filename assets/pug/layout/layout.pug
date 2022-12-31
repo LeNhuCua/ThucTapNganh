@@ -1,19 +1,27 @@
-include ../mixin/mixin
+block mixin
+    include ../mixin/mixin
+block vars
+    -title = 'Movie'
+
 doctype html
 head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Movie
+    title= title 
     link(rel='stylesheet' href='./main.css')
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css')
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css')
 body
-    include ./general/header
-    .container
-        include ./general/sidebar
-        main
-            block main
-    include ./general/footer
+    block header
+        include ./general/header
+    block content
+        .container
+            block sidebar
+                include ./general/sidebar
+            main
+                block main
+    block footer 
+        include ./general/footer
     script(src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js')
     script(src='./js/main.js')

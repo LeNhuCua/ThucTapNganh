@@ -13,11 +13,41 @@
             font-size: 1.6rem;
             color: $black-color;
             margin-left: auto;
-            @include flexCenter;
+            @include flexCenter(row);
             gap: 1rem;
             &:hover {
                 color: $orange-color;
             }
         }
+    }
+    .oneFilm{
+        &.hide {
+            display: none;
+        }
+    
+    }
+}
+.detail-content {
+    font-size: 1.6rem;
+    color: $black-color;
+    @include flexCenter(column);
+    align-items: flex-start;
+    line-height: 2.4rem;
+    gap: 2rem;
+    &__heading {
+        @include flexCenter(row);
+        justify-content: start;
+        gap: 2rem;
+        li {
+            list-style: circle;
+        }
+        a {
+            color: $black-color;
+            &:hover {
+                color: $orange-color;
+            }
+        }
+        
+        
     }
 }

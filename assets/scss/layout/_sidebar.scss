@@ -15,11 +15,13 @@
     overflow-y: scroll;
     background: $grey-color3;
 
-
     &__nav {
         width: 100%;
 
         .nav-list {
+
+        
+
             width: 100%;
 
             &__item {
@@ -32,6 +34,7 @@
 
 
                 cursor: pointer;
+
 
                 a {
                     display: flex;
@@ -64,9 +67,9 @@
 
                 &--noicon {
                     font-weight: 700;
-                    user-select: none;
-                    pointer-events: none;
+
                 }
+
 
             }
 
@@ -77,10 +80,23 @@
                 font-size: 1.4rem;
 
                 a {
-                    color: $grey-color;
 
+                    color: $grey-color;
                     &:hover {
                         color: red;
+                    }
+                }
+  
+                .type {
+
+                    padding-left: 1rem;
+
+                    &.active a{
+                        width: 100%;
+                        border-radius: 0.6rem;
+                        background: $blue-color;
+                        font-weight: bold;
+                        color: $white-color;
                     }
                 }
             }

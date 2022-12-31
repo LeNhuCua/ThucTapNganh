@@ -1,0 +1,48 @@
+%pseudo {
+    content: '';
+    width: 0.2rem;
+    height: 1.6rem;
+    transform: rotate(10deg)  translateX(0.6rem);
+    background: red;
+    position: absolute;
+    display: inline;
+
+}
+.directif {
+    width: 100%;
+    height: auto;
+    &_nav {
+  
+        @include flexCenter(row);
+        gap: 1rem;
+        .directif_list {
+            @include flexCenter(row);
+            gap: 1.5rem;
+            font-size: 1.6rem;
+           font-weight: 600;
+           position: relative;
+           padding:  4px 0 24px;
+            .directif_item {
+                
+                a {
+                    color: $black-color;
+
+                }
+                &--home {
+                    a {
+                        @include flexCenter(row);
+                        gap: 1rem;
+                    }
+                }
+
+                &:not(:first-child)::after  {
+                    @extend %pseudo;
+                 
+                }
+                &:hover a {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

@@ -2,8 +2,8 @@
     @include responsive(tablet-large) {
         margin-left: 0;
     }
-    @include flexCenter;
-    flex-direction: column;
+    @include flexCenter(column);
+ 
     gap: 2rem;
     background: $white-color;
 

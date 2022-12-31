@@ -1,22 +1,22 @@
 
 .form {
-    @include flexCenter;
+    @include flexCenter(column);
 
     width: 100%;
     gap: 2rem;
-    flex-direction: column;
+   
     z-index: 3;
 
     background: $white-color;
     transition: all 0.25s;
 
     &__close {
-        @include flexCenter;
-        justify-content: center;
+        @include flexCenter(row);
+       
         position: absolute;
         right: 0;
         transform: translate(50%, -50%);
-
+        top: 0;
         width: 3rem;
         height: 3rem;
 
@@ -36,9 +36,9 @@
     }
 
     &__body {
-        @include flexCenter;
+        @include flexCenter(column);
         gap: 2rem;
-        flex-direction: column;
+      
 
         width: 100%;
         padding: 4rem 5rem;
@@ -49,9 +49,9 @@
         }
 
         form {
-            @include flexCenter;
+            @include flexCenter(column);
             gap: 2rem;
-            flex-direction: column;
+          
 
             width: 100%;
 
@@ -90,7 +90,7 @@
             }
 
             .check {
-                @include flexCenter;
+                @include flexCenter(row);
                 justify-content: space-between;
 
                 width: 100%;
@@ -98,7 +98,7 @@
                 font-size: 1.6rem;
 
                 &__remember {
-                    @include flexCenter;
+                    @include flexCenter(row);
                     column-gap: 0.7rem;
                 }
 
@@ -141,8 +141,8 @@
 
         font-size: 1.6rem;
 
-        @include flexCenter;
-        justify-content: center;
+        @include flexCenter(row);
+      
         gap: 0.7rem;
 
         background: $grey-color2;
