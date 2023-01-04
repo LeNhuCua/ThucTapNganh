@@ -24,6 +24,8 @@
         }
 
         .quality {
+            @include borderRadius(0.4rem);
+            
             position: absolute;
             top: 1rem;
             left: 1rem;
@@ -35,7 +37,7 @@
             background: $line-color;
 
             padding: 0.2rem 0.4rem;
-            border-radius: 0.4rem;
+            
         }
 
         .play {
@@ -92,7 +94,7 @@
 
             &.star {
                 @include flexCenter(row);
-          
+                @include borderRadius(0.4rem);
 
                 background: $yellow-color;
                 
@@ -101,7 +103,7 @@
                 text-align: center;
 
                 padding: 0.2rem 0.4rem;
-                border-radius: 0.3rem;
+                
             }
 
         }

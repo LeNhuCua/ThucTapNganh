@@ -1,4 +1,6 @@
 .main__detail {
+    @include flexCenter(column);
+    gap: 2rem;
     .detail-poster {
  
         cursor: pointer;
@@ -53,7 +55,7 @@
                     border: none;
                     outline: none;
                     border-radius: 0.4rem;
-                    padding: 1rem 2rem;
+                    padding: 1rem 3rem;
                     &:first-child {
                         color: $green-color;
                     }
@@ -68,6 +70,7 @@
         }
     }
 }
+
 .trailer {
     @include responsive(phone) {
         display: none;
@@ -76,18 +79,25 @@
     height: 50%;
     position: relative;
     color: $white-color;
+    border-radius: 0.4rem;
+
     cursor: pointer;
     img {
         width: 100%;
         height: 100%;
+        border-radius: 0.4rem;
     }
     .play {
+        font-size:2rem;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0%;
         left: 0%;
         @include flexCenter(row);
+        gap: 1rem;
         background-color: rgba(0, 25, 51, 0.6);
+      
+        border-radius: 0.4rem;
     }
 }

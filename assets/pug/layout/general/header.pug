@@ -1,3 +1,6 @@
+svg.checkbox-symbol
+  symbol#check(viewbox='0 0 12 10')
+    polyline(points='1.5 6 4.5 9 10.5 1' stroke-linecap='round' stroke-linejoin='round' stroke-width='2')
 .loading
 .form-container  
 .form-login
@@ -15,8 +18,13 @@
           input#input-pass(type='password' placeholder='Password')
         .check
           .check__remember
-            input(type='checkbox')
-            |  Remember me
+            input#remember.checkbox-input(type='checkbox')
+            label.checkbox(for='remember')
+              span
+                svg(width='12px' height='10px')
+                  use(xlink:href='#check')
+              span Remember
+
           .check__forgot
             a(title='Forgot password') Forgot password
         button(type='submit') Login
@@ -58,13 +66,13 @@
           input#f-input-email(type='text' placeholder='name@email.com')
         button(type='submit') Submit
     footer.form__footer
-      a#login(title='Login') Back to Login
+      a#backtologin(title='Login') Back to Login
 header#header.header
   .header__content.container
     #menu-btn
       span
     .header__content--logo
-      a(href='#')
+      a(href='./index.html')
         img(src='./images/logo.png' alt='logo')
     .header__content--search
       form(action='')

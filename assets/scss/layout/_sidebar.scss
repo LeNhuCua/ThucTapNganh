@@ -92,8 +92,9 @@
                     padding-left: 1rem;
 
                     &.active a{
+                        @include borderRadius(0.6rem);
+
                         width: 100%;
-                        border-radius: 0.6rem;
                         background: $blue-color;
                         font-weight: bold;
                         color: $white-color;
@@ -114,7 +115,9 @@
 
     &::-webkit-scrollbar-thumb {
         background: #8c8790;
-        border-radius: 50px;
+
+        @include borderRadius(5rem);
+
     }
 
     @include responsive(tablet-large) {

@@ -12,7 +12,8 @@
 
     &__close {
         @include flexCenter(row);
-       
+        @include borderRadius(50%);
+
         position: absolute;
         right: 0;
         transform: translate(50%, -50%);
@@ -22,7 +23,6 @@
 
         background: $grey-color;
        
-        border-radius: 50%;
         cursor: pointer;
         transition: all 0.25s;
 
@@ -121,7 +121,9 @@
 
                 padding: 1.2rem 0px;
                 border: none;
-                border-radius: 0.6rem;
+                
+                @include borderRadius(0.6rem);
+
                 outline: none;
                 cursor: pointer;
 

@@ -3,8 +3,31 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+    .mobile {
+        @include responsive(phone) {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
     &__heading {
         display: flex;
+        gap: 1rem;
+        align-items: center;
+        .btn-list{
+            .btn {
+                padding: 0.7rem 1rem;
+                cursor: pointer;
+                border-radius: 0.4rem;
+                border: none;
+                outline: none;
+                &.active {
+                    background: $orange-color;
+                }
+                &:first-child {
+                    margin-right: 1rem;
+                }
+            }
+        }
         h3 {
             @include titleText(2.6rem);
             
@@ -19,12 +42,18 @@
                 color: $orange-color;
             }
         }
+
     }
     .oneFilm{
         &.hide {
             display: none;
         }
     
+    }
+    .trending {
+        &.hide {
+            display: none;
+        }
     }
 }
 .detail-content {
@@ -42,6 +71,7 @@
             list-style: circle;
         }
         a {
+      
             color: $black-color;
             &:hover {
                 color: $orange-color;
@@ -50,4 +80,30 @@
         
         
     }
+    h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        &:hover {
+            cursor: pointer;
+            color: $orange-color
+        }
+    }
+    &__stats{
+        font-size: 1.6rem;
+        
+        strong {
+            cursor: pointer;
+        }
+        @include flexCenter(row);
+        gap: 2rem;
+        button {
+            font-weight: 700;
+            cursor: pointer;
+            background: none;
+            color: $yellow-color;
+            outline: none;
+            border: none;
+        }
+    }
+    &__des {}
 }

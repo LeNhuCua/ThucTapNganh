@@ -10,6 +10,16 @@
 
 }
 
+
+@mixin borderRadius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+
 @mixin responsive($breakpoint)  {
     @if $breakpoint == phone {
         @media screen  and (max-width:600px){

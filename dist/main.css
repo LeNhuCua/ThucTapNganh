@@ -1506,11 +1506,16 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   position: relative;
+  justify-content: start;
   height: 3rem;
   background-color: #fff;
   padding-left: 1.2rem;
-  border-radius: 0.6rem;
 }
 .header__content--search form button {
   position: absolute;
@@ -1523,6 +1528,11 @@ body li {
   color: #0a0a0a;
 }
 .header__content--search form input {
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   height: 100%;
   width: 100%;
   font-size: 1.4rem;
@@ -1530,7 +1540,6 @@ body li {
   outline: none;
   border: none;
   padding-left: 2.5rem;
-  border-radius: 0.5rem;
 }
 .header__content--login {
   display: flex;
@@ -1561,6 +1570,125 @@ body li {
   }
 }
 
+.checkbox-symbol {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox-container {
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #222;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.checkbox-container * {
+  box-sizing: border-box;
+}
+
+.checkbox-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox {
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.checkbox:not(:last-child) {
+  margin-right: 6px;
+}
+
+.checkbox:hover {
+  background: rgba(0, 119, 255, 0.06);
+}
+
+.checkbox span {
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox span:first-child {
+  position: relative;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  transform: scale(1);
+  border: 1px solid #cccfdb;
+  transition: all 0.3s ease;
+}
+
+.checkbox span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox span:last-child {
+  padding-left: 8px;
+  line-height: 18px;
+}
+
+.checkbox:hover span:first-child {
+  border-color: #0077ff;
+}
+
+.checkbox-input:checked + .checkbox span:first-child {
+  background: #0077ff;
+  border-color: #0077ff;
+  -webkit-animation: zoom-in-out 0.3s ease;
+          animation: zoom-in-out 0.3s ease;
+}
+
+.checkbox-input:checked + .checkbox span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+@-webkit-keyframes zoom-in-out {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes zoom-in-out {
+  50% {
+    transform: scale(0.9);
+  }
+}
 .sidebar {
   position: fixed;
   width: 290px;
@@ -1624,8 +1752,12 @@ body li {
   padding-left: 1rem;
 }
 .sidebar__nav .nav-list__grid .type.active a {
-  width: 100%;
   border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  width: 100%;
   background: #3d3da1;
   font-weight: bold;
   color: #fff;
@@ -1638,7 +1770,11 @@ body li {
 }
 .sidebar::-webkit-scrollbar-thumb {
   background: #8c8790;
-  border-radius: 50px;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
 }
 @media screen and (max-width: 1200px) {
   .sidebar {
@@ -1717,6 +1853,11 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   position: absolute;
   right: 0;
   transform: translate(50%, -50%);
@@ -1724,7 +1865,6 @@ body li {
   width: 3rem;
   height: 3rem;
   background: #393939;
-  border-radius: 50%;
   cursor: pointer;
   transition: all 0.25s;
 }
@@ -1808,6 +1948,10 @@ body li {
   padding: 1.2rem 0px;
   border: none;
   border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   outline: none;
   cursor: pointer;
   transform: all 0.5s;
@@ -1866,6 +2010,11 @@ body li {
 }
 
 .loading {
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
   position: fixed;
   z-index: 100000000000000020000000000;
   top: 50%;
@@ -1873,7 +2022,6 @@ body li {
   transform: translate(-50%, -50%);
   width: 6rem;
   height: 6rem;
-  border-radius: 100rem;
   border: 0.4rem solid #e9e1e1;
   -webkit-animation: loading 2s infinite linear;
           animation: loading 2s infinite linear;
@@ -2028,6 +2176,11 @@ body li {
      object-fit: fill;
 }
 .card-firm__main .quality {
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -2037,7 +2190,6 @@ body li {
   color: #0a0a0a;
   background: linear-gradient(to right, #beecbe, #18a318);
   padding: 0.2rem 0.4rem;
-  border-radius: 0.4rem;
 }
 .card-firm__main .play {
   display: flex;
@@ -2090,12 +2242,16 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
   background: #ecc761;
   font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
   padding: 0.2rem 0.4rem;
-  border-radius: 0.3rem;
 }
 .card-firm__info i {
   font-size: 0.6rem;
@@ -2218,6 +2374,10 @@ body li {
     width: auto;
     background-color: #393939;
     border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
     opacity: 0.8;
     transition: all 0.3s;
   }
@@ -2305,8 +2465,29 @@ body li {
   gap: 2rem;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .home-container .mobile {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 .home-container__heading {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.home-container__heading .btn-list .btn {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+}
+.home-container__heading .btn-list .btn.active {
+  background: #c35854;
+}
+.home-container__heading .btn-list .btn:first-child {
+  margin-right: 1rem;
 }
 .home-container__heading h3 {
   font-size: 2.6rem;
@@ -2329,6 +2510,9 @@ body li {
   color: #c35854;
 }
 .home-container .oneFilm.hide {
+  display: none;
+}
+.home-container .trending.hide {
   display: none;
 }
 
@@ -2360,7 +2544,40 @@ body li {
 .detail-content__heading a:hover {
   color: #c35854;
 }
-
+.detail-content h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.detail-content h2:hover {
+  cursor: pointer;
+  color: #c35854;
+}
+.detail-content__stats {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.detail-content__stats strong {
+  cursor: pointer;
+}
+.detail-content__stats button {
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  color: #ecc761;
+  outline: none;
+  border: none;
+}
+.main__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 .main__detail .detail-poster {
   cursor: pointer;
 }
@@ -2430,7 +2647,7 @@ body li {
   border: none;
   outline: none;
   border-radius: 0.4rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
 }
 @media screen and (max-width: 600px) {
   .main__detail .detail-poster__mark .btn button {
@@ -2453,6 +2670,7 @@ body li {
   height: 50%;
   position: relative;
   color: #fff;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
@@ -2463,8 +2681,10 @@ body li {
 .trailer img {
   width: 100%;
   height: 100%;
+  border-radius: 0.4rem;
 }
 .trailer .play {
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2474,5 +2694,7 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   background-color: rgba(0, 25, 51, 0.6);
+  border-radius: 0.4rem;
 }

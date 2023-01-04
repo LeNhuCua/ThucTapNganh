@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
+  <svg class="checkbox-symbol">
+    <symbol id="check" viewbox="0 0 12 10">
+      <polyline points="1.5 6 4.5 9 10.5 1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
+    </symbol>
+  </svg>
   <div class="loading"></div>
   <div class="form-container"> </div>
   <div class="form-login">
@@ -27,7 +32,11 @@
           </div>
           <div class="check">
             <div class="check__remember">
-              <input type="checkbox"> Remember me
+              <input class="checkbox-input" id="remember" type="checkbox">
+              <label class="checkbox" for="remember"><span>
+                  <svg width="12px" height="10px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Remember</span></label>
             </div>
             <div class="check__forgot"><a title="Forgot password">Forgot password</a></div>
           </div>
@@ -82,13 +91,13 @@
           <button type="submit">Submit</button>
         </form>
       </div>
-      <footer class="form__footer"><a id="login" title="Login">Back to Login</a></footer>
+      <footer class="form__footer"><a id="backtologin" title="Login">Back to Login</a></footer>
     </div>
   </div>
   <header class="header" id="header">
     <div class="header__content container">
       <div id="menu-btn"><span></span></div>
-      <div class="header__content--logo"><a href="#"><img src="./images/logo.png" alt="logo"></a></div>
+      <div class="header__content--logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></div>
       <div class="header__content--search">
         <form action="">
           <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -105,7 +114,7 @@
       <div id="menu-close-btn"><span></span></div>
       <nav class="sidebar__nav">
         <ul class="nav-list">
-          <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+          <li class="nav-list__item"><a class="nav-list__item--icon" href="./"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
           <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-ranking-star"></i><span>Top IMDB</span></a></li>
           <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-film"></i><span>Movies</span></a></li>
           <li class="nav-list__item"><a class="nav-list__item--icon" href=""><i class="fa-solid fa-tv"></i><span>TV Shows</span></a></li>
@@ -143,73 +152,73 @@
         </div>
         <div class="swiper-wrapper slider">
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide1.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Glass Onion: A Knives Out Mystery</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Glass Onion: A Knives Out Mystery</a>
               <div class="card-firm__info"><span class="item star">7.9</span><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">139 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide2.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Violent Night</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Violent Night</a>
               <div class="card-firm__info"><span class="item star">9.2</span><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">112 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide3.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Apology</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Apology</a>
               <div class="card-firm__info"><span class="item star">1</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">91 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide4.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Prey for the Devil</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Prey for the Devil</a>
               <div class="card-firm__info"><span class="item star">8.1</span><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide5.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Guillermo del Toro's Pinocchio</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Guillermo del Toro's Pinocchio</a>
               <div class="card-firm__info"><span class="item star">5</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide6.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Guardians of the Galaxy Holiday Special</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Guardians of the Galaxy Holiday Special</a>
               <div class="card-firm__info"><span class="item star">9</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide7.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Wednesday</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Wednesday</a>
               <div class="card-firm__info"><span class="item star">9</span><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
               </div>
             </div>
           </div>
           <div class="swiper-slide card-slider">
-            <div class="card-firm"><a class="card-firm__main" href="">
+            <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                 <div class="poster"><img src="./images/slide8.jpg" alt=""/></div>
                 <div class="quality">HD</div>
-                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Troll</a>
+                <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Troll</a>
               <div class="card-firm__info"><span class="item star">6</span><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
               </div>
             </div>
@@ -217,20 +226,183 @@
         </div>
       </section>
       <section class="social-network">
-        <nav class="social-network__list"><a class="item" href="./detail.html" style="--i:#1DA1F2;"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a><a class="item" href="" style="--i:#3B5998;"><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a><a class="item" href="" style="--i:#4DC247;"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a><a class="item" href="" style="--i:#CB2027;"><i class="fa-brands fa-pinterest"></i><span>Pinterest</span></a><a class="item" href="" style="--i:#0088CC;"><i class="fa-brands fa-telegram"></i><span>Telegram</span></a><a class="item" href="" style="--i:#848484;"><i class="fa-solid fa-envelope"></i><span>Email</span></a><a class="item" href="" style="--i:#FF6550;"><i class="fa-solid fa-plus"></i><span>More</span></a></nav>
+        <nav class="social-network__list"><a class="item" href="./detail.html" style="--i:#1DA1F2;"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a><a class="item" href="./watch.html" style="--i:#3B5998;"><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a><a class="item" href="./watch.html" style="--i:#4DC247;"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a><a class="item" href="./watch.html" style="--i:#CB2027;"><i class="fa-brands fa-pinterest"></i><span>Pinterest</span></a><a class="item" href="./watch.html" style="--i:#0088CC;"><i class="fa-brands fa-telegram"></i><span>Telegram</span></a><a class="item" href="./watch.html" style="--i:#848484;"><i class="fa-solid fa-envelope"></i><span>Email</span></a><a class="item" href="./watch.html" style="--i:#FF6550;"><i class="fa-solid fa-plus"></i><span>More</span></a></nav>
+        <section class="home-container">
+          <div class="home-container__heading">
+            <h3>Trending</h3>
+            <div class="btn-list">
+              <button class="btn active" data="movies">Movies</button>
+              <button class="btn" data="tv">TV Shows</button>
+            </div>
+          </div>
+          <div class="home-container__main">
+            <div class="row gy-5">
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/action1.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Lair</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">90 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/action2.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Seven Deadly Sins: Grudge of Edinburgh Part 1</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">52 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/action3.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">High Heat</a>
+                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">84 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/adventure1.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Wickensburg</a>
+                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">126 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/adventure2.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Amazing Maurice</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">90 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/animation1.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Sonic Prime</a>
+                    <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="movies">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/animation2.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Beauty and the Beast: A 30th Celebration</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">110 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/comedy1.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Snowball Effect</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/comedy2.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Christmas Carole</a>
+                    <div class="card-firm__info"><span class="item">2019</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/comedy3.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Babylon</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/comedy4.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Fabulous</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">100 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/drama1.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Treason</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/drama2.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Fabulous</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">110 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/drama3.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Interest of Love</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">60 m</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 trending" data="tv">
+                <div class="film-item">
+                  <div class="card-firm"><a class="card-firm__main" href="./watch.html">
+                      <div class="poster"><img src="./images/drama4.jpg" alt=""></div>
+                      <div class="quality">HD</div>
+                      <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">A Brush with Christmas</a>
+                    <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">9 m</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <section class="home-container">
         <div class="home-container__heading">
-          <h3>Type of Film</h3><a href=""><span>View All</span><i class="fa-solid fa-chevron-right"></i></a>
+          <h3>Type of Film</h3><a href="./watch.html"><span>View All</span><i class="fa-solid fa-chevron-right"></i></a>
         </div>
         <div class="home-container__main">
           <div class="row gy-5">
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="action">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/action1.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Lair</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Lair</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">90 m</span>
                   </div>
                 </div>
@@ -238,10 +410,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="action">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/action2.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Seven Deadly Sins: Grudge of Edinburgh Part 1</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Seven Deadly Sins: Grudge of Edinburgh Part 1</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">52 m</span>
                   </div>
                 </div>
@@ -249,10 +421,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="action">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/action3.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">High Heat</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">High Heat</a>
                   <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">84 m</span>
                   </div>
                 </div>
@@ -260,10 +432,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="adventure">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/adventure1.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Wickensburg</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Wickensburg</a>
                   <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">126 m</span>
                   </div>
                 </div>
@@ -271,10 +443,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="adventure">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/adventure2.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Amazing Maurice</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Amazing Maurice</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">90 m</span>
                   </div>
                 </div>
@@ -282,10 +454,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="animation">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/animation1.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Sonic Prime</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Sonic Prime</a>
                   <div class="card-firm__info"><span class="item">2021</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
                   </div>
                 </div>
@@ -293,10 +465,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="animation">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/animation2.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Beauty and the Beast: A 30th Celebration</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Beauty and the Beast: A 30th Celebration</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">110 m</span>
                   </div>
                 </div>
@@ -304,10 +476,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="comedy">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/comedy1.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Snowball Effect</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Snowball Effect</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
                   </div>
                 </div>
@@ -315,10 +487,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="comedy">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/comedy2.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Christmas Carole</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Christmas Carole</a>
                   <div class="card-firm__info"><span class="item">2019</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
                   </div>
                 </div>
@@ -326,10 +498,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="comedy">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/comedy3.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Babylon</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Babylon</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
                   </div>
                 </div>
@@ -337,10 +509,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="comedy">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/comedy4.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Fabulous</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Fabulous</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">100 m</span>
                   </div>
                 </div>
@@ -348,10 +520,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="drama">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/drama1.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">Treason</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">Treason</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">120 m</span>
                   </div>
                 </div>
@@ -359,10 +531,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="drama">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/drama2.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Fabulous</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Fabulous</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">110 m</span>
                   </div>
                 </div>
@@ -370,10 +542,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="drama">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/drama3.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">The Interest of Love</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">The Interest of Love</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">60 m</span>
                   </div>
                 </div>
@@ -381,10 +553,10 @@
             </div>
             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 oneFilm" data1="drama">
               <div class="film-item">
-                <div class="card-firm"><a class="card-firm__main" href="">
+                <div class="card-firm"><a class="card-firm__main" href="./watch.html">
                     <div class="poster"><img src="./images/drama4.jpg" alt=""/></div>
                     <div class="quality">HD</div>
-                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="">A Brush with Christmas</a>
+                    <div class="play"><i class="fa-solid fa-play"></i></div></a><a class="card-firm__name" href="./watch.html">A Brush with Christmas</a>
                   <div class="card-firm__info"><span class="item">2022</span><i class="item fa-solid fa-circle"></i><span class="item">9 m</span>
                   </div>
                 </div>
@@ -410,4 +582,5 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/index.js"></script>
 </body>

@@ -1,6 +1,8 @@
 .main__video {
     color: $white-color;
     background: $black2-color;
+
+    
     .video-left {
         width: 100%;
         video {
@@ -65,7 +67,7 @@
                     @include responsive(tablet-large) {
                         width: auto;
                         background-color: $grey-color;
-                        border-radius: 0.4rem;
+                        @include borderRadius(0.4rem);
                         opacity: 0.8;
                         transition: all 0.3s;
                         &:hover {
