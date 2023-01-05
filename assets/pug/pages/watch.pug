@@ -1,6 +1,7 @@
 extends ../layout/layout.pug
 block vars
     -title= 'Watch'
+    -filmAlsoLike = data.filmList
 block js
     script(src='./js/watch.js')
 block main
@@ -35,28 +36,7 @@ block main
                                     h3 Sever
                                     span Vidcloud
     section.social-network
-        nav.social-network__list
-            a.item(href='./detail.html' style='--i:#1DA1F2;')
-                i.fa-brands.fa-twitter
-                span Twitter
-            a.item(href='' style='--i:#3B5998;')
-                i.fa-brands.fa-square-facebook
-                span Facebook
-            a.item(href='' style='--i:#4DC247;')
-                i.fa-brands.fa-whatsapp
-                span WhatsApp
-            a.item(href='' style='--i:#CB2027;')
-                i.fa-brands.fa-pinterest
-                span Pinterest
-            a.item(href='' style='--i:#0088CC;')
-                i.fa-brands.fa-telegram
-                span Telegram
-            a.item(href='' style='--i:#848484;')
-                i.fa-solid.fa-envelope
-                span Email
-            a.item(href='' style='--i:#FF6550;')
-                i.fa-solid.fa-plus
-                span More
+        +social(socials)
     section.main__detail
         .row.gy-5.gx-3
             .col-xl-2.col-sm-12.col-md-2
@@ -128,26 +108,11 @@ block main
 
     section.home-container
         .home-container__heading
-            h3 Type of Film
+            h3 You may also like
             a(href='./watch.html')
                 span View All
                 i.fa-solid.fa-chevron-right
         .home-container__main
-            .row.gy-5.mobile
-                +filmList("action","./images/action1.jpg","The Lair","2022","90 m")
-                +filmList("action","./images/action2.jpg","The Seven Deadly Sins: Grudge of Edinburgh Part 1","2022","52 m")
-                +filmList("action","./images/action3.jpg","High Heat","2021","84 m")
-                +filmList("adventure","./images/adventure1.jpg","Wickensburg","2021","126 m")
-                +filmList("adventure","./images/adventure2.jpg","The Amazing Maurice","2022","90 m")
-                +filmList("animation","./images/animation1.jpg","Sonic Prime","2021","120 m")
-                +filmList("animation","./images/animation2.jpg","Beauty and the Beast: A 30th Celebration","2022","110 m")
-                +filmList("comedy","./images/comedy1.jpg","The Snowball Effect","2022","120 m")
-                +filmList("comedy","./images/comedy2.jpg","Christmas Carole","2019","120 m")
-                +filmList("comedy","./images/comedy3.jpg","Babylon","2022","120 m")
-                +filmList("comedy","./images/comedy4.jpg","The Fabulous","2022","100 m")
-                +filmList("drama","./images/drama1.jpg","Treason","2022","120 m")
-                +filmList("drama","./images/drama2.jpg","The Fabulous","2022","110 m")
-                +filmList("drama","./images/drama3.jpg","The Interest of Love","2022","60 m")
-                +filmList("drama","./images/drama4.jpg","A Brush with Christmas","2022","9 m")
+            +filmListGenre(filmAlsoLike)
 
 

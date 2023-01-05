@@ -82,7 +82,7 @@
 
     &__info {
         @include flexCenter(row);
-
+        justify-content: start;
         width: 100%;
         font-size: 1.4rem;
 

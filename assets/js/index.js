@@ -14,7 +14,7 @@ btn_trending.forEach((btn) => {
     }
     btn.classList.add("active");
     trending.forEach((item) => {
-      if (item.getAttribute("data") == type)
+      if (type == "all" || item.getAttribute("data") == type)
         item.classList.remove("hide");
       else item.classList.add("hide");
     });

@@ -23,8 +23,8 @@
                 &.active {
                     background: $orange-color;
                 }
-                &:first-child {
-                    margin-right: 1rem;
+                &:not(:first-child) {
+                    margin-left: 1rem;
                 }
             }
         }

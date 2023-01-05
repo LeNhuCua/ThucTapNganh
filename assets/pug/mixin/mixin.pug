@@ -18,24 +18,46 @@ mixin film(image,name,year,hour,star)
                 i.item.fa-solid.fa-circle
                 span.item= hour
 
-mixin filmList(type,image,name,year,hour,star)
-    .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6.oneFilm(data1=type)
-        .film-item
-            .card-firm
-                a.card-firm__main(href='./watch.html')
-                    .poster
-                        img(src=image alt='')
-                    .quality HD
-                    .play
-                        i.fa-solid.fa-play
-                a.card-firm__name(href='./watch.html')=name
-                .card-firm__info
-                    if star
-                        span.item.star= star
-                        span.item= year
-                        i.item.fa-solid.fa-circle
-                        span.item= hour
-                    else
-                        span.item= year
-                        i.item.fa-solid.fa-circle
-                        span.item= hour
+mixin social(socials)
+    nav.social-network__list
+        each social in socials
+            a.item(href=social.href style=social.style)
+                i(class= social.icon)
+                span= social.text
+
+mixin slide(filmSlides)
+    .swiper-wrapper.slider
+        each filmSlide in filmSlides
+            .swiper-slide.card-slider
+                +film(filmSlide.img,filmSlide.name,filmSlide.year,filmSlide.time,filmSlide.star)   
+
+
+mixin btnTrending(btnTrendings)
+    .btn-list
+        each btnTrending in btnTrendings
+            button(class= btnTrending.class)(data=btnTrending.data)= btnTrending.text
+
+mixin filmListTrending(filmLists)
+    .row.gy-5
+        each filmList in filmLists
+            if filmList.type == "tv" || filmList.type == "movies"
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6.trending(data= filmList.type)
+                    .film-item
+                        +film(filmList.img,filmList.name,filmList.year,filmList.time)
+
+mixin filmListGenre(filmLists)
+    .row.gy-5
+        each filmList in filmLists
+            if filmList.type == "action" || filmList.type == "adventure" || filmList.type == "animation" || filmList.type == "comedy" || filmList.type == "drama"
+                .col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6.oneFilm(data1=filmList.type)
+                    .film-item
+                        +film(filmList.img,filmList.name,filmList.year,filmList.time)
+
+mixin linkSidebar(links)
+    nav.sidebar__nav
+        each link in links
+            ul.nav-list
+                li.nav-list__item
+                    a.nav-list__item--icon(href=link.href)
+                        i(class= link.icon)
+                        span= link.text

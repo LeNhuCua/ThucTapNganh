@@ -231,9 +231,3 @@
   .checkbox-input:checked + .checkbox span:first-child svg {
     stroke-dashoffset: 0;
   }
-  
-  @keyframes zoom-in-out {
-    50% {
-      transform: scale(0.9);
-    }
-  }

@@ -45,6 +45,16 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes zoom-in-out {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes zoom-in-out {
+  50% {
+    transform: scale(0.9);
+  }
+}
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -1678,17 +1688,6 @@ body li {
   stroke-dashoffset: 0;
 }
 
-@-webkit-keyframes zoom-in-out {
-  50% {
-    transform: scale(0.9);
-  }
-}
-
-@keyframes zoom-in-out {
-  50% {
-    transform: scale(0.9);
-  }
-}
 .sidebar {
   position: fixed;
   width: 290px;
@@ -2230,6 +2229,7 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: start;
   width: 100%;
   font-size: 1.4rem;
 }
@@ -2413,52 +2413,6 @@ body li {
   background: #393939;
 }
 
-.directif_nav .directif_list .directif_item:not(:first-child)::after {
-  content: "";
-  width: 0.2rem;
-  height: 1.6rem;
-  transform: rotate(10deg) translateX(0.6rem);
-  background: red;
-  position: absolute;
-  display: inline;
-}
-
-.directif {
-  width: 100%;
-  height: auto;
-}
-.directif_nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.directif_nav .directif_list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  position: relative;
-  padding: 4px 0 24px;
-}
-.directif_nav .directif_list .directif_item a {
-  color: #0a0a0a;
-}
-.directif_nav .directif_list .directif_item--home a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.directif_nav .directif_list .directif_item:hover a {
-  opacity: 0.8;
-}
-
 .home-container {
   display: flex;
   flex-direction: column;
@@ -2486,8 +2440,8 @@ body li {
 .home-container__heading .btn-list .btn.active {
   background: #c35854;
 }
-.home-container__heading .btn-list .btn:first-child {
-  margin-right: 1rem;
+.home-container__heading .btn-list .btn:not(:first-child) {
+  margin-left: 1rem;
 }
 .home-container__heading h3 {
   font-size: 2.6rem;
