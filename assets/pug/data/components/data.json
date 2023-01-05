@@ -1,7 +1,7 @@
 {
   "link": [
     {
-      "href": "/",
+      "href": "index.html",
       "text": "Home",
       "icon": "fa-solid fa-house"
     },
