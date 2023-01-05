@@ -1,9 +1,9 @@
+@import './layout/grid';
 @import './abstract/mixin';
 @import './abstract/variable';
 @import './base/animation';
 @import './base/global';
 @import './base/reset';
-@import './layout/grid';
 @import './layout/header';
 @import './layout/sidebar';
 @import './layout/footer';
@@ -15,6 +15,5 @@
 @import './component/cardfirm';
 @import './component/slider';
 @import './component/video';
-@import './component/_directif';
 @import './page/home';
 @import './page/watch';
